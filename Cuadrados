@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <canvas width="500" height="500" id="myCanvas"></canvas>
+    <canvas width="1000" height="1000" id="myCanvas"></canvas>
 
     <script>
         var canvas = document.getElementById("myCanvas"); 
@@ -26,6 +26,17 @@
 
         ctx.fillStyle = "rgba(250, 123, 207, 0.9)";
         ctx.fillRect(150,150,80,80);
+        ctx.moveTo(0,0);
+        ctx.lineTo(0,400);
+        ctx.lineTo(1000,400);
+        ctx.lineTo(1000,0);
+        ctx.lineTo(0,0);
+
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = 'black';
+
+        ctx.stroke();
+
 
        
     </script>
