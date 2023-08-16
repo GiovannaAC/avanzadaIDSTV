@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulos</title>
+    <style>
+        canvas {
+            background-color: #FFD4F0;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas width="500" height="500" id="myCanvas"></canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas"); 
+        var ctx = canvas.getContext('2d');
+
+       ctx.fillStyle = "pink"
+       ctx.font = "60px Arial";
+       ctx.fillText("Giovanna:)", 120, 50)
+
+
+       ctx.strokeStyle = "#CC118C";
+       ctx.strokeText("Giovanna:)", 122, 52)
+
+    
+    </script>
+</body>
+</html>
