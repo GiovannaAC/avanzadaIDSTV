@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulos</title>
+    <style>
+        canvas {
+            background-color: #FFD4F0;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas width="500" height="500" id="myCanvas"></canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas"); 
+        var ctx = canvas.getContext('2d');
+
+        ctx.beginPath();
+        ctx.strokeStyle = "#CC118C";
+        ctx.fillStyle = "pink";
+        ctx.arc(100, 300, 50, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath()
+        ctx.arc(160,300, 50, 0, 2 * Math.PI);
+        ctx.stroke();
+
+    
+    </script>
+</body>
+</html>
