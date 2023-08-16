@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radial</title>
+    <style>
+        canvas {
+            background-color: #FFD4F0;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas width="500" height="500" id="myCanvas"></canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas"); 
+        var ctx = canvas.getContext('2d');
+
+
+        const grd = ctx.createRadialGradient(150, 125, 10, 150, 125, 100);
+        grd.addColorStop(0, "#FF00A7");
+        grd.addColorStop(1, "#500034");
+      
+     
+
+        ctx.fillStyle = grd;
+        ctx.fillRect(50, 50, 200, 150)
+    
+    </script>
+</body>
+</html>
