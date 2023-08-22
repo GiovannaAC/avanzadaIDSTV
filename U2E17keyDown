@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Down</title>
+    <style>
+        canvas {
+            background-color: #FFD4F0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas width="500" height="500" id="myCanvas"></canvas>
+        
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        var x = 225, y = 225; 
+        var color = randomRgbColor();
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "w") {
+                y -= 10;
+            }
+            if (e.key === "s") {
+                y += 10;
+            }
+            if (e.key === "a") {
+                x -= 10;
+            }
+            if (e.key === "d") {
+                x += 10;
+            }
+            color = randomRgbColor(); 
+            update(); 
+        });
+
+        function randomInteger(max) {
+            return Math.floor(Math.random() * (max + 1));
+        }
+
+        function randomRgbColor() {
+            let r = randomInteger(255);
+            let g = randomInteger(255);
+            let b = randomInteger(255);
+            return `rgba(${r},${g},${b},0.5)`;
+        }
+
+        function update() {
+            ctx.fillStyle = "#FFD4F0";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = color; 
+            ctx.fillRect(x, y, 50, 50);
+            ctx.strokeRect(x, y, 50, 50);
+        }
+
+        update();
+
+    </script>
+</body>
+</html>
