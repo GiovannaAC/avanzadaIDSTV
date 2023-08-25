@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovanna</title>
+    <style>
+        canvas {
+            display: block;
+            margin: auto;
+            background-color: #FFD4F0;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas width="500" height="500" id="myCanvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+
+        // Texto
+
+        ctx.fillStyle = "pink"
+        ctx.font = "60px Arial";
+        ctx.fillText("Giovanna <3", 90, 50)
+
+        ctx.strokeStyle = "#CC118C";
+        ctx.strokeText("Giovanna <3", 92, 52)
+
+        // Cabello
+        ctx.fillStyle = "black";
+        ctx.fillRect(centerX - 121, centerY - 10, 242, 150);
+
+        // Cabeza
+        ctx.fillStyle = "#FFE9C4";
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, 120, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Boca 
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.arc(centerX, centerY + 30, 60, 0.2 * Math.PI, 0.8 * Math.PI);
+        ctx.lineTo(centerX - 60, centerY + 40);
+        ctx.lineTo(centerX + 60, centerY + 40);
+        ctx.closePath();
+        ctx.fill();
+
+        // Labial
+        ctx.strokeStyle = "#FF69B4"; 
+        ctx.lineWidth = 4;
+        ctx.stroke();
+
+        // Dientes 
+        ctx.fillStyle = "white";
+        ctx.fillRect(centerX - 52, centerY + 42, 105, 6);
+
+        // Lengua 
+        ctx.fillStyle = "red"; 
+        ctx.beginPath();
+        ctx.arc(centerX, centerY + 62, 25, 0, Math.PI);
+        ctx.fill();
+
+        // Ojo izquierdo
+        ctx.fillStyle = "white";
+        ctx.beginPath();
+        ctx.arc(centerX - 40, centerY - 20, 25, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Ojo derecho
+        ctx.fillStyle = "white";
+        ctx.beginPath();
+        ctx.arc(centerX + 40, centerY - 20, 25, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Pupilas
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.arc(centerX - 40, centerY - 20, 10, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.arc(centerX + 40, centerY - 20, 10, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Cejas
+        ctx.strokeStyle = "black"; 
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.moveTo(centerX - 60, centerY - 50);
+        ctx.lineTo(centerX - 20, centerY - 50);
+        ctx.stroke();
+
+        ctx.strokeStyle = "black"; 
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.moveTo(centerX + 20, centerY - 50);
+        ctx.lineTo(centerX + 60, centerY - 50);
+        ctx.stroke();
+
+        // Nariz
+        ctx.strokeStyle = "black"; // Negro
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY - 20);
+        ctx.quadraticCurveTo(centerX - 15, centerY, centerX, centerY + 10);
+        ctx.stroke();
+
+        // Copete del cabello
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.arc(centerX - 1, centerY, 120, -Math.PI, -Math.PI / 2, false);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.arc(centerX + 1, centerY, 120, -Math.PI / 2, 0, false);
+        ctx.closePath();
+        ctx.fill();
+
+        // Cuello
+        ctx.fillStyle = "#FFE9C4"; 
+        ctx.fillRect(centerX - 40, centerY + 110, 80, 40);
+
+        // Cuerpo
+        ctx.fillStyle = "#FFE9C4"; 
+        ctx.fillRect(centerX - 175, centerY + 140, 350, 130);
+
+        // Ropa
+        ctx.fillStyle = "#D9019B";
+        ctx.fillRect(centerX - 100, centerY + 140, 20, 50);
+
+        ctx.fillStyle = "#D9019B";
+        ctx.fillRect(centerX + 80, centerY + 140, 20, 50);
+
+        ctx.fillStyle = "#D9019B";
+        ctx.fillRect(centerX - 110, centerY + 180, 220, 100);
+
+        // Orejas
+        ctx.fillStyle = "#FFE9C4"; 
+        ctx.beginPath();
+        ctx.arc(centerX - 110, centerY + 25, 25, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(centerX + 110, centerY + 25, 25, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Aretes
+        ctx.fillStyle = "#D9019B";
+        ctx.beginPath();
+        ctx.arc(centerX - 115, centerY + 40, 2, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.fillStyle = "#D9019B";
+        ctx.beginPath();
+        ctx.arc(centerX + 115, centerY + 40, 2, 0, Math.PI * 2);
+        ctx.fill();
+        
+       
+    </script>
+</body>
+</html>
