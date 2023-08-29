@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paisaje</title>
+    <style>
+        canvas {
+            display: block;
+            margin: auto;
+        
+        }
+    </style>
+</head>
+<body>
+
+    <canvas width="500" height="500" id="myCanvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Cielo 
+        ctx.fillStyle = 'midnightblue';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Estrellas
+        ctx.fillStyle = 'white';
+        for (let i = 0; i < 100; i++) {
+            const x = Math.random() * canvas.width;
+            const y = Math.random() * canvas.height;
+            ctx.fillRect(x, y, 2, 2);
+        }
+        
+        // Luna
+        ctx.fillStyle = 'lightgray';
+        ctx.beginPath();
+        ctx.arc(90, 70, 40, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Barco
+        ctx.fillStyle = 'saddlebrown';
+        ctx.beginPath();
+        ctx.moveTo(50, canvas.height * 0.52);
+        ctx.lineTo(170, canvas.height * 0.52);
+        ctx.lineTo(170, canvas.height * 0.71);
+        ctx.closePath();
+
+        ctx.fillStyle = 'saddlebrown';
+        ctx.moveTo(450, canvas.height * 0.52);
+        ctx.lineTo(330, canvas.height * 0.52);
+        ctx.lineTo(330, canvas.height * 0.71);
+        ctx.closePath();
+
+        ctx.fillStyle = 'saddlebrown';
+        ctx.moveTo(170, canvas.height * 0.52);
+        ctx.fillRect(170, canvas.height * 0.52, 160, 90);
+        ctx.fill();
+
+        // Velero 
+        ctx.fillStyle = 'white';
+        ctx.beginPath();
+        ctx.moveTo(canvas.width / 2, canvas.height * 0.50);
+        ctx.lineTo(canvas.width / 2, 29);
+        ctx.lineTo(canvas.width / 2 + 55, canvas.height * 0.50);
+        ctx.closePath();
+        ctx.fill();
+
+         
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = 8;
+        ctx.beginPath();
+        ctx.moveTo(canvas.width / 2, canvas.height * 0.52);
+        ctx.lineTo(canvas.width / 2, 30);
+        ctx.stroke();
+
+
+        // Mar
+        ctx.fillStyle = 'navy';
+        ctx.fillRect(0, canvas.height * 0.7, canvas.width, canvas.height * 0.3);
+
+   
+
+       
+    </script>
+</body>
+</html>
