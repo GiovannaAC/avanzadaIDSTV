@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic</title>
+    <style>
+        canvas {
+            display: block;
+            margin: auto;
+        
+        }
+    </style>
+</head>
+<body>
+
+    <canvas width="600" height="500" id="myCanvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Fondo
+        ctx.fillStyle = "#0037A4";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Suelo
+        ctx.fillStyle = "#E08009"; 
+        ctx.fillRect(0, 420 - 20, canvas.width, 180); 
+
+        
+        // Cuadritos del suelo
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(0, 640 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(0, 580 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(30, 610 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(30, 550 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(60, 640 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(60, 580 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(90, 550 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(90, 610 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(120, 640 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(180, 640 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(240, 640 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(300, 640 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(360, 640 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(420, 640 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+        
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(480, 640 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+        
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(540, 640 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+        
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(150, 610 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+        
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(210, 610 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+        
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(270, 610 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+        
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(330, 610 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+        
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(390, 610 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+        
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(450, 610 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+        
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(510, 610 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(570, 610 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(120, 580 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(180, 580 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(240, 580 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(300, 580 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(360, 580 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(420, 580 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(480, 580 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(540, 580 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(150, 550 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(210, 550 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(270, 550 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(330, 550 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(390, 550 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(450, 550 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(510, 550 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#4E2B00"; 
+        ctx.fillRect(570, 550 - 170, 30, 30); 
+        ctx.fill();
+        ctx.stroke();
+
+        // Sombra del suelo
+        ctx.fillStyle = "rgba(0, 0,0, 0.5)";
+        ctx.fillRect(0, 550 - 170, 600, 45); 
+        ctx.fill();
+        ctx.stroke();
+
+        //Suelo
+        ctx.fillStyle = "#1D8602"; 
+        ctx.fillRect(0, 405 - 20, canvas.width, 15); 
+
+        ctx.fillStyle = "#30AD10"; 
+        ctx.fillRect(0, 390 - 20, canvas.width, 15); 
+
+        ctx.fillStyle = "#85DE1D"; 
+        ctx.fillRect(0, 375 - 20, canvas.width, 15); 
+
+
+        // Aritos
+        ctx.beginPath();
+        ctx.arc(80, 310, 20, 0, 2 * Math.PI);
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = "#E2E009";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(170, 310, 20, 0, 2 * Math.PI);
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = "#E2E009";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(260, 310, 20, 0, 2 * Math.PI);
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = "#E2E009";
+        ctx.stroke();
+
+        // Palmera abstracta je
+        ctx.fillStyle = "#6A3902";
+        ctx.fillRect(350, 55, 15, 300);
+
+        ctx.beginPath();
+        ctx.moveTo(550, 10);
+        ctx.lineTo(300, 50);
+        ctx.lineTo(350, 150);
+        ctx.closePath();
+        ctx.fillStyle = "#39FF00"; 
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(300, 10);
+        ctx.lineTo(100, 50);
+        ctx.lineTo(350, 150);
+        ctx.closePath();
+        ctx.fillStyle = "#39FF00"; 
+        ctx.fill();
+
+        // Girasol
+        ctx.fillStyle = "#1CAC00";
+        ctx.fillRect(500, 255, 10, 100);
+
+        ctx.beginPath();
+        ctx.arc(505, 250, 30, 0, 2 * Math.PI);
+        ctx.fillStyle = "#4D514D ";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(505, 250, 30, 0, 2 * Math.PI);
+        ctx.lineWidth = 15;
+        ctx.strokeStyle = "#F8F74A";
+        ctx.stroke();
+
+       
+    </script>
+</body>
+</html>
