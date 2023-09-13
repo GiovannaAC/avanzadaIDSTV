@@ -1,0 +1,81 @@
+<style>
+
+    button {
+       background-color: pink;
+       color: white;
+       border: none;
+       cursor: pointer;
+       padding: 20px ;
+       border-radius: 10px;
+     }
+ 
+     
+     button:hover {
+       background-color: rgb(238, 51, 160);
+     }
+ 
+     h1 {
+       color: rgb(216, 33, 146);
+     }
+ 
+ </style>
+ 
+ <div class="container" id="app">
+
+    <form>
+        <fieldset>
+            <legend>
+                Nombre(s):
+            </legend>
+            <input type="text" v-model="name" placeholder="escribe aquí" name="">
+        </fieldset>
+        <fieldset>
+            <legend>
+                Apellido(s):
+            </legend>
+            <input type="text" v-model="lastname" placeholder="escribe aquí" name="">
+        </fieldset>
+
+        <button type="button" v-on:click="saveData">
+            Guardar
+
+        </button>
+    </form>
+
+    <ol>
+        <li v-for="person in people">
+            {{person.name}} {{person.lastname}}
+        </li>
+    </ol>
+ 
+ 
+ </div>
+ 
+ 
+ <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+ <script type="text/javascript">
+ 
+   const { createApp, ref } = Vue
+ 
+   createApp({
+     setup() {   
+ 
+       return {
+         name: ref(''),
+         lastname: ref(''),
+         people: ref([])
+       }
+     },
+     methods:{
+       saveData() {
+        let person = {
+            name: this.name,
+            lastname: this.lastname
+        }
+        this.people.push(person);
+
+       }
+     }
+ 
+   }).mount('#app')
+ </script>
