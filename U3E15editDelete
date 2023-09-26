@@ -314,10 +314,10 @@
                     this.users.forEach ( (user) => {
                         if (user.id == this.new_record.id) {
 
-                            this.new_record.name = user.name;
-                            this.new_record.email = user.email;
-                            this.new_record.street = user.address.street;
-                            this.new_record.company_name = user.company.name;
+                            user.name = this.new_record.name;
+                            user.email = this.new_record.email;
+                            user.street = this.new_record.street;
+                            user.company.name = this.new_record.company_name;
                         }
                     })
 
