@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+       Login
+    </title>
+    <style type="text/css">
+        body{
+            background-color: pink;
+        }
+        .my-class  {
+            overflow: auto;
+            width: 100%;
+        }
+
+        button {
+        background-color: rgb(245, 112, 190);
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 20px;
+        border-radius: 10px;
+        }
+
+        button:hover {
+        background-color: rgb(228, 0, 133);
+        }
+        
+        fieldset {
+            color: rgb(189, 0, 79);
+        }
+
+        caption {
+            color: rgb(189, 0, 79);
+        }
+
+        .my-class table {
+            border: 1px solid #ff0363;
+            height: 100%;
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            border-spacing: 1px;
+            text-align: left;
+        }
+        .my-class caption {
+            caption-side: top;
+            text-align: left;
+        }
+        .my-class th {
+            border: 1px solid #ff0363;
+            background-color: rgb(224, 99, 136);
+            color: #520052;
+            padding: 5px;
+        }
+        .my-class td {
+            border: 1px solid #ff0363;
+            background-color: rgb(243, 200, 213);
+            color: #8b298b;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="container_app">
+        
+        <form v-if="!access">
+            
+            <fieldset>
+                <legend>
+                    Correo
+                </legend>
+                <input type="email" v-model="email" placeholder="escribe aquí" name="">
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Contraseña
+                </legend>
+                <input type="password" v-model="password" placeholder="escribe aquí" name="">
+            </fieldset>
+
+            <button @click="login" type="button" >
+                Iniciar sesión
+            </button>
+
+        </form>
+
+         
+        <div v-if="access" class="my-class" role="region" tabindex="0">
+            <table>
+                <caption>
+                    Lista de usuarios
+                </caption>
+                <thead>
+                <tr>
+                    <th>
+                        Personal Data
+                    </th>
+                    <th>
+                        Contact Data
+                    </th>
+                    <th>
+                        Address
+                    </th>
+                    <th>
+                        Company Data
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="u in users">
+                        <td>
+                            {{ u.name }}, {{ u.username }}
+                        </td>
+                        <td>
+                            {{ u.email }}, {{ u.phone }}
+                        </td>
+                        <td>
+                            {{ u.address.street }}, {{ u.address.zipcode }}
+                        </td>
+                        <td>
+                            {{ u.company.name }}
+                        </td>
+                    </tr>  
+                </tbody>
+            </table> 
+
+            <button @click="action='new'">
+                Añadir nuevo registro
+            </button>
+
+            <form style="margin-top: 15px;" v-if="action=='new'">
+                <fieldset>
+                    <legend>
+                        Name:
+                    </legend>
+                    <input v-model="new_record.name" type="" name="">
+                </fieldset>
+            
+                <fieldset>
+                    <legend>
+                        Email:
+                    </legend>
+                    <input v-model="new_record.email" type="" name="">
+                </fieldset>
+            
+                <fieldset>
+                    <legend>
+                        Address:
+                    </legend>
+                    <input v-model="new_record.street" type="" name="">
+                </fieldset>
+            
+                <fieldset>
+                    <legend>
+                        Company:
+                    </legend>
+                    <input v-model="new_record.company_name" type="" name="">
+                </fieldset>
+            
+                <button type="button" @click="save()">
+                    Guardar Registro
+                </button>
+            </form>
+
+           
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+
+        const { createApp, ref, useAsyncState, useFetch} = Vue
+
+        createApp({ 
+            setup(){
+
+                email = ref('giovannaa_20@alu.uabcs.mx'), password = ref('pink22')
+                users = ref([])
+                new_record = ref([]);
+                access = ref(localStorage.getItem('is_login') ?? false);
+                action = ref ('')
+                return {
+                    email, 
+                    password,
+                    access,
+                    users,
+                    new_record,
+                    action
+                }
+            }, 
+
+            async mounted(){
+                
+                const update = async () =>{
+                    
+                    const response = await fetch("users.json");
+                    this.users = await response.json();
+
+                } 
+
+                if (this.access) {
+                    update();
+                } 
+            }, 
+
+             
+
+            methods:{
+                async login(){
+
+                    const response = await fetch("users.json");
+                    this.users = await response.json();
+                     
+
+                    this.users.forEach((user) => {
+
+                        if (this.email == user.email) {
+                            if (this.password == user.password) {
+
+                                alert("Bienvenido "+ user.name)
+                                
+                                localStorage.setItem('is_login',true);
+                                localStorage.setItem("user_data", JSON.stringify(user));
+
+                                this.access = true;
+                            }
+                        }
+                    })
+
+                    if(!this.access){
+                        alert("Verifique su información")
+                    }
+
+                },
+                
+
+            save() 
+            {
+                this.new_record.company = [];
+                this.new_record.company.name = this.new_record.company_name;;
+
+                this.new_record.address = [];
+                this.new_record.address.street = this.new_record.street;
+
+       
+                this.users.push(this.new_record)
+
+                this.new_record = [];
+
+                this.action = '';
+
+                alert("El registro se ha completado correctamente")
+            }
+        }
+
+           
+        
+
+        }).mount("#container_app")
+        
+    </script>
+</body>
+</html>
