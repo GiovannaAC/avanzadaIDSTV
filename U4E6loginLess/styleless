@@ -1,0 +1,144 @@
+@color_1: #87CCA4;
+@color_2: #06B5E3;
+@color_3: #333;
+@color_4: #5E6472;
+@color_5: #252537;
+@font_family_1: 'Crimson Text', serif;
+@font_family_2: 'Dela Gothic One', sans-serif;
+@font_family_3: 'Playfair', serif;
+@font_family_4: 'Abel', sans-serif;
+
+@import "https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur";
+@import "https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Dela+Gothic+One&family=Playfair:ital,opsz,wght@1,5..1200,300&display=swap";
+@keyframes ani9 {
+	0% {
+		transform: translateY(3px);
+	}
+	100% {
+		transform: translateY(5px);
+	}
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url('img/fondo.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+form {
+	width: 450px;
+	min-height: 500px;
+	height: auto;
+	border-radius: 5px;
+	margin: 2% auto;
+	box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+	padding: 2%;
+	background: transparent;
+	border: 4px solid #87CCA4;
+	border-radius: 20px;
+	backdrop-filter: blur(15px);
+	.con {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: space-around;
+		justify-content: space-around;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+}
+header {
+	margin: 2% auto 10% auto;
+	text-align: center;
+	h2 {
+		font-size: 450%;
+		color: @color_2;
+		font-family: @font_family_1;
+		font-family: @font_family_2;
+		font-family: @font_family_3;
+	}
+	p {
+		letter-spacing: 0.05em;
+	}
+}
+P {
+	color: @color_1;
+}
+.input-item {
+	background: #87CCA4;
+	color: @color_3;
+	padding: 14.5px 0px 15px 9px;
+	border-radius: 5px 0px 0px 5px;
+}
+#eye {
+	background: #fff;
+	color: @color_3;
+	margin: 5.9px 0 0 0;
+	margin-left: -20px;
+	padding: 15px 9px 19px 0px;
+	border-radius: 0px 5px 5px 0px;
+	float: right;
+	position: relative;
+	right: 1%;
+	top: -.2%;
+	z-index: 5;
+	cursor: pointer;
+}
+input[class="form-input"] {
+	width: 240px;
+	height: 50px;
+	margin-top: 2%;
+	padding: 15px;
+	font-size: 16px;
+	font-family: @font_family_4;
+	color: @color_4;
+	outline: none;
+	border: none;
+	border-radius: 0px 5px 5px 0px;
+	transition: 0.2s linear;
+}
+input[id="txt-input"] {
+	width: 250px;
+}
+input {
+	&:focus {
+		transform: translateX(-2px);
+		border-radius: 5px;
+	}
+}
+button {
+	display: inline-block;
+	color: @color_5;
+	width: 280px;
+	height: 50px;
+	padding: 0 20px;
+	background: #a7ced8;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	transition: all 0.2s linear;
+	margin: 7% auto;
+	letter-spacing: 0.05em;
+	&:hover {
+		transform: translatey(3px);
+		box-shadow: none;
+		background: #06B5E3;
+		animation: ani9 0.4s ease-in-out infinite alternate;
+	}
+}
+.submits {
+	width: 48%;
+	display: inline-block;
+	float: left;
+	margin-left: 2%;
+}
