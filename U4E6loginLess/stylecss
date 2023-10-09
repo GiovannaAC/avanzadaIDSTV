@@ -1,0 +1,407 @@
+@font-face {
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/abel/v18/MwQ5bhbm2POE2V9BOA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/abrilfatface/v23/zOL64pLDlL1D99S8g8PtiKchq-dmiA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Alegreya';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/alegreya/v35/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNG9hU4-6qm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Arima Madurai';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/arimamadurai/v15/t5tmIRoeKYORG0WNMgnC3seB3T7Pqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v25/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Sup5.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/dosis/v32/HhyJU5sn9vOmLxNkIwRSjTVNWLEJN7Ml2xMB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/merriweather/v30/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oleo Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/oleoscript/v14/rax5HieDvtMOe0iICsUccChdu0o.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Overlock';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/overlock/v17/Z9XVDmdMWRiN1_T9Z7TZ6Ok.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ptserif/v18/EJRVQgYoZZY2vCFuvAFWzro.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/pacifico/v22/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playball';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/playball/v20/TK3gWksYAxQ7jbsKcg8Ene8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v36/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Share';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/share/v18/i7dEIFliZjKNF6VKFr4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Unica One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/unicaone/v18/DPEuYwWHyAYGVTSmalsRcd3b.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Vibur';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/vibur/v23/DPEiYwmEzw0QRgTuJD4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v19/wlpogwHKFkZgtmSR3NB0oRJfaghW.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dela Gothic One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/delagothicone/v15/hESp6XxvMDRA-2eD0lXpDa6QkBAGRQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQbjF5FUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQbDF5FUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQYjFpFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQYzFpFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQYDFpFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQYTFpFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQZjFpFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQZDFpFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQajFpFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQarFpFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQazFpFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQaDFpFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQbjFpFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQbDFpFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQYzFZFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQZjFZFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQZTFZFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQazFZFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQbjFZFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQbTFZFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfair/v2/0nkSC9D7PO4KhmUJ59baVQ_iWhg0cgSrLQYzFJFUsLCFf_1ubkfQeG9KkBAQcOsAs-zcOW5eqyc.ttf) format('truetype');
+}
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('img/fondo.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+form {
+  width: 450px;
+  min-height: 500px;
+  height: auto;
+  border-radius: 5px;
+  margin: 2% auto;
+  box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+  padding: 2%;
+  background: transparent;
+  border: 4px solid #87CCA4;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+}
+form .con {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+header {
+  margin: 2% auto 10% auto;
+  text-align: center;
+}
+header h2 {
+  font-size: 450%;
+  color: #06B5E3;
+  font-family: 'Crimson Text', serif;
+  font-family: 'Dela Gothic One', sans-serif;
+  font-family: 'Playfair', serif;
+}
+header p {
+  letter-spacing: 0.05em;
+}
+P {
+  color: #87CCA4;
+}
+.input-item {
+  background: #87CCA4;
+  color: #333;
+  padding: 14.5px 0px 15px 9px;
+  border-radius: 5px 0px 0px 5px;
+}
+#eye {
+  background: #fff;
+  color: #333;
+  margin: 5.9px 0 0 0;
+  margin-left: -20px;
+  padding: 15px 9px 19px 0px;
+  border-radius: 0px 5px 5px 0px;
+  float: right;
+  position: relative;
+  right: 1%;
+  top: -0.2%;
+  z-index: 5;
+  cursor: pointer;
+}
+input[class="form-input"] {
+  width: 240px;
+  height: 50px;
+  margin-top: 2%;
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Abel', sans-serif;
+  color: #5E6472;
+  outline: none;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  transition: 0.2s linear;
+}
+input[id="txt-input"] {
+  width: 250px;
+}
+input:focus {
+  transform: translateX(-2px);
+  border-radius: 5px;
+}
+button {
+  display: inline-block;
+  color: #252537;
+  width: 280px;
+  height: 50px;
+  padding: 0 20px;
+  background: #a7ced8;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s linear;
+  margin: 7% auto;
+  letter-spacing: 0.05em;
+}
+button:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+  background: #06B5E3;
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+.submits {
+  width: 48%;
+  display: inline-block;
+  float: left;
+  margin-left: 2%;
+}
